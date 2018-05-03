@@ -96,10 +96,7 @@
 		2B994881444372EED4CDD23134146E1A /* EasyDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				D40A8882209B921800C41993 /* String+Extensions.swift */,
-				D40A887E209B8FA700C41993 /* Optional+Extensions.swift */,
-				D40A887C209B8E1400C41993 /* Dictionary+Extensions.swift */,
-				D40A8880209B90BA00C41993 /* TimeZone+Extensions.swift */,
+				D40A8884209B9BCA00C41993 /* Classes */,
 				57919DF4F20278F13E613BAC9CF7CC54 /* Pod */,
 				08F00375F7536C0B367F70B2857C89CB /* Support Files */,
 			);
@@ -177,6 +174,17 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		D40A8884209B9BCA00C41993 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D40A8882209B921800C41993 /* String+Extensions.swift */,
+				D40A887E209B8FA700C41993 /* Optional+Extensions.swift */,
+				D40A887C209B8E1400C41993 /* Dictionary+Extensions.swift */,
+				D40A8880209B90BA00C41993 /* TimeZone+Extensions.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		E1EEDDB0C678E717279F7E437E893F0D /* Targets Support Files */ = {
