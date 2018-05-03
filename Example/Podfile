@@ -1,0 +1,6 @@
+use_frameworks!
+target 'EasyDictionary_Tests' do
+  pod 'EasyDictionary', :path => '../'
+  
+  
+end
