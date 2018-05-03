@@ -38,7 +38,7 @@ public extension Dictionary where Key == String {
     
     public func optionalTimeZone(_ keyPath: String) -> TimeZone? {
         guard let timeZoneString: String = optional(keyPath),
-            let timeZone = TimeZone.from(string: timeZoneString)
+            let timeZone = TimeZone.from(dateString: timeZoneString)
             else { return nil }
         return timeZone
     }
