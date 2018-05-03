@@ -9,8 +9,8 @@ import Foundation
 
 /// This code is from John Sundell, but I'm not sure where I got it from.. 😅
 /// See his work at: https://github.com/JohnSundell
-public extension Optional {
-    public func orThrow<E: Error>(_ errorClosure: @autoclosure () -> E) throws -> Wrapped {
+extension Optional {
+    func orThrow<E: Error>(_ errorClosure: @autoclosure () -> E) throws -> Wrapped {
         guard let value = self else { throw errorClosure() }
         return value
     }

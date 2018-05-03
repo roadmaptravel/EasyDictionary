@@ -175,13 +175,21 @@
 		D40A8885209B9C7200C41993 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D40A8886209B9C7200C41993 /* String+Extensions.swift */,
+				D40A888B209BA28300C41993 /* Helpers */,
 				D40A8888209B9C7200C41993 /* TimeZone+Extensions.swift */,
-				D40A8889209B9C7200C41993 /* Optional+Extensions.swift */,
 				D40A888A209B9C7200C41993 /* Dictionary+Extensions.swift */,
 			);
 			name = Classes;
 			path = EasyDictionary/Classes;
+			sourceTree = "<group>";
+		};
+		D40A888B209BA28300C41993 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D40A8886209B9C7200C41993 /* String+Extensions.swift */,
+				D40A8889209B9C7200C41993 /* Optional+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		E1EEDDB0C678E717279F7E437E893F0D /* Targets Support Files */ = {

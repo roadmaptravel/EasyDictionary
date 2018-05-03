@@ -7,8 +7,8 @@
 
 import Foundation
 
-public extension String {
-    public func substring(from range: Range<Int>) -> String {
+extension String {
+    func substring(from range: Range<Int>) -> String {
         let start = index(startIndex, offsetBy: range.lowerBound)
         let end = index(startIndex, offsetBy: range.upperBound)
         return String(self[start..<end])
