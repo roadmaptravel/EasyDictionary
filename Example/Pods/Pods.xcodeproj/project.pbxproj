@@ -11,6 +11,10 @@
 		458BFF1869CC0457EB8883E77075185C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7E2079E10933FC5BDC51DF0FC6FBD362 /* Pods-EasyDictionary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FECCF2814BAAE7F15F35E6BA7DA1712 /* Pods-EasyDictionary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DC18E71B3FB7EA9B593F9CAA36BD2A4 /* EasyDictionary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD87267F40DC84DD9D6F8D23FD7A78C /* EasyDictionary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D40A888C209BA83D00C41993 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40A888A209B9C7200C41993 /* Dictionary+Extensions.swift */; };
+		D40A888D209BA84000C41993 /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40A8888209B9C7200C41993 /* TimeZone+Extensions.swift */; };
+		D40A888E209BA84300C41993 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40A8889209B9C7200C41993 /* Optional+Extensions.swift */; };
+		D40A888F209BA84600C41993 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40A8886209B9C7200C41993 /* String+Extensions.swift */; };
 		E2DE07B9659ED4EF3ABB87225C099468 /* EasyDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4C017C72A019BDB21A95A415A7CF5 /* EasyDictionary-dummy.m */; };
 		F508299C67C9631A3425D6908924C3D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -297,7 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40A888F209BA84600C41993 /* String+Extensions.swift in Sources */,
 				E2DE07B9659ED4EF3ABB87225C099468 /* EasyDictionary-dummy.m in Sources */,
+				D40A888E209BA84300C41993 /* Optional+Extensions.swift in Sources */,
+				D40A888C209BA83D00C41993 /* Dictionary+Extensions.swift in Sources */,
+				D40A888D209BA84000C41993 /* TimeZone+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

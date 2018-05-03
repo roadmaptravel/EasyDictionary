@@ -9,7 +9,7 @@ import Foundation
 
 public extension TimeZone {
     public static func from(dateString: String) -> TimeZone? {
-        let timeZoneString = String(string.suffix(6))
+        let timeZoneString = String(dateString.suffix(6))
         guard timeZoneString.count == 6 else { return nil }
         
         let hoursString = timeZoneString.substring(from: 1..<3)
