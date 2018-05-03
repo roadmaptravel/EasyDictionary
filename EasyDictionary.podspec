@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EasyDictionary'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Nothing special just a few helpers to get values from a dictionary.'
   s.description      = <<-DESC
 This little helper provides some methods to get optional and non-optional values from your dictionary. This can be used anywhere, but we use it mostly to parse data from an endpoint into an object.
