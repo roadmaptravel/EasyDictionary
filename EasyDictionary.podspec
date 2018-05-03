@@ -20,5 +20,6 @@ This little helper provides some methods to get optional and non-optional values
   s.source           = { :git => 'https://github.com/roadmaptravel/EasyDictionary.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/roadmaptravel'
   s.ios.deployment_target = '8.0'
-  s.source_files = 'EasyDictionary/Classes/**/*'
+  s.source_files     = 'EasyDictionary/Classes/**/*'
+  s.swift_version    = '4.0'
 end
