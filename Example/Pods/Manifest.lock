@@ -1,0 +1,16 @@
+PODS:
+  - EasyDictionary (0.1.0)
+
+DEPENDENCIES:
+  - EasyDictionary (from `../`)
+
+EXTERNAL SOURCES:
+  EasyDictionary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EasyDictionary: 7ddea16a41ffd2eaa9af462165bfefe25f30e575
+
+PODFILE CHECKSUM: e1b21aa0c73881dbdeb6b0c4f35ada7ca0e5bc60
+
+COCOAPODS: 1.5.0

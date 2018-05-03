@@ -1,0 +1,6 @@
+framework module EasyDictionary {
+  umbrella header "EasyDictionary-umbrella.h"
+
+  export *
+  module * { export * }
+}
