@@ -14,6 +14,15 @@ public extension Dictionary where Key == String {
         case invalidDate(keyPath: String)
         case invalidTimeZone(keyPath: String)
         case invalidUrl(keyPath: String)
+		
+		public var localizedDescription: String {
+			switch self {
+			case .invalidKey(let keyPath): return "Invalid key: \(keyPath)"
+			case .invalidDate(let keyPath): return "Invalid date: \(keyPath)"
+			case .invalidTimeZone(let keyPath): return "Invalid timezone: \(keyPath)"
+			case .invalidUrl(let keyPath): return "Invalid url: \(keyPath)"
+			}
+		}
     }
     
     public func optional<T>(_ keyPath: String) -> T? {
