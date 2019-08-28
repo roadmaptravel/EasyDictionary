@@ -25,45 +25,45 @@ public extension Dictionary where Key == String {
 		}
     }
     
-    public func optional<T>(_ keyPath: String) -> T? {
+    func optional<T>(_ keyPath: String) -> T? {
         let value: T? = recursive(keyPath: keyPath, in: self)
         return value
     }
     
-    public func required<T>(_ keyPath: String) throws -> T {
+    func required<T>(_ keyPath: String) throws -> T {
         return try optional(keyPath).orThrow(ParseError.invalidKey(keyPath: keyPath))
     }
     
-    public func optionalDate(_ keyPath: String, formatter: DateFormatter) -> Date? {
+    func optionalDate(_ keyPath: String, formatter: DateFormatter) -> Date? {
         guard let dateString: String = optional(keyPath),
             let date = formatter.date(from: dateString)
             else { return nil }
         return date
     }
     
-    public func requiredDate(_ keyPath: String, formatter: DateFormatter) throws -> Date {
+    func requiredDate(_ keyPath: String, formatter: DateFormatter) throws -> Date {
         return try optionalDate(keyPath, formatter: formatter).orThrow(ParseError.invalidDate(keyPath: keyPath))
     }
     
-    public func optionalTimeZone(_ keyPath: String) -> TimeZone? {
+    func optionalTimeZone(_ keyPath: String) -> TimeZone? {
         guard let timeZoneString: String = optional(keyPath),
             let timeZone = TimeZone.from(dateString: timeZoneString)
             else { return nil }
         return timeZone
     }
     
-    public func requiredTimeZone(_ keyPath: String) throws -> TimeZone {
+    func requiredTimeZone(_ keyPath: String) throws -> TimeZone {
         return try optionalTimeZone(keyPath).orThrow(ParseError.invalidTimeZone(keyPath: keyPath))
     }
     
-    public func optionalUrl(_ keyPath: String) -> URL? {
+    func optionalUrl(_ keyPath: String) -> URL? {
         guard let urlString: String = optional(keyPath),
             let url = URL(string: urlString)
             else { return nil }
         return url
     }
     
-    public func requiredUrl(_ keyPath: String) throws -> URL {
+    func requiredUrl(_ keyPath: String) throws -> URL {
         return try optionalUrl(keyPath).orThrow(ParseError.invalidUrl(keyPath: keyPath))
     }
 }
