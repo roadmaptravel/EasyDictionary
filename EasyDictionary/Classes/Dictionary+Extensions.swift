@@ -56,15 +56,19 @@ public extension Dictionary where Key == String {
         return try optionalTimeZone(keyPath).orThrow(ParseError.invalidTimeZone(keyPath: keyPath))
     }
     
-    func optionalUrl(_ keyPath: String) -> URL? {
-        guard let urlString: String = optional(keyPath),
-            let url = URL(string: urlString)
-            else { return nil }
+    func optionalUrl(_ keyPath: String, allowedCharacters: CharacterSet? = nil) -> URL? {
+		guard var urlString: String = optional(keyPath) else { return nil }
+		
+		if let allowedCharacters = allowedCharacters {
+			urlString = urlString.addingPercentEncoding(withAllowedCharacters: allowedCharacters) ?? urlString
+		}
+
+		guard let url = URL(string: urlString) else { return nil }
         return url
     }
     
-    func requiredUrl(_ keyPath: String) throws -> URL {
-        return try optionalUrl(keyPath).orThrow(ParseError.invalidUrl(keyPath: keyPath))
+	func requiredUrl(_ keyPath: String, allowedCharacters: CharacterSet? = nil) throws -> URL {
+		return try optionalUrl(keyPath, allowedCharacters: allowedCharacters).orThrow(ParseError.invalidUrl(keyPath: keyPath))
     }
 }
 
